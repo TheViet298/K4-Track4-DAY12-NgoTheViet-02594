@@ -1,0 +1,105 @@
+{
+  "student": {
+    "student_id": "02594",
+    "split_seed": 9302,
+    "model_seed": 9360,
+    "v_ego": 10.0
+  },
+  "n_segments": 600,
+  "log_mb": 9.5,
+  "rerun_identical": true,
+  "rerun": {
+    "segments": 600,
+    "differ_beyond_tol": 0,
+    "not_bit_identical": 0,
+    "max_abs_diff": 0.0,
+    "atol": 0.001,
+    "rtol": 0.001,
+    "differing_segments": []
+  },
+  "refactor_float32": {
+    "segments": 600,
+    "differ_beyond_tol": 0,
+    "not_bit_identical": 600,
+    "max_abs_diff": 0.0004031320308968134,
+    "atol": 0.001,
+    "rtol": 0.001,
+    "differing_segments": []
+  },
+  "behaviour_change_aeb": {
+    "segments": 600,
+    "differ_beyond_tol": 10,
+    "not_bit_identical": 10,
+    "max_abs_diff": 1.7337810761863457,
+    "atol": 0.001,
+    "rtol": 0.001,
+    "differing_segments": [
+      55,
+      76,
+      152,
+      207,
+      276,
+      404,
+      434,
+      448,
+      469,
+      504
+    ]
+  },
+  "fastest": {
+    "frames": 59525,
+    "dropped": 0,
+    "late": 0,
+    "mode": "fastest",
+    "segments": 600,
+    "differ_beyond_tol": 0,
+    "not_bit_identical": 0,
+    "max_abs_diff": 0.0,
+    "atol": 0.001,
+    "rtol": 0.001,
+    "differing_segments": []
+  },
+  "realtime": {
+    "frames": 59525,
+    "dropped": 574,
+    "late": 583,
+    "mode": "realtime",
+    "segments": 600,
+    "differ_beyond_tol": 380,
+    "not_bit_identical": 382,
+    "max_abs_diff": 6.810022355263261,
+    "atol": 0.001,
+    "rtol": 0.001,
+    "differing_segments": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      9,
+      12,
+      13,
+      15,
+      16,
+      18,
+      19,
+      20,
+      21,
+      23,
+      25,
+      26,
+      27
+    ]
+  },
+  "summation_order_demo": {
+    "(0.1+0.2)+0.3": 0.6000000000000001,
+    "0.1+(0.2+0.3)": 0.6,
+    "float32_sum_forward_50k": 42.32094955444336,
+    "float32_sum_reversed_50k": 42.320655822753906,
+    "float32_sum_numpy_pairwise_50k": 42.32032775878906,
+    "relative_difference_forward_vs_reversed": 6.9405741669470444e-06
+  },
+  "note": "tolerance atol=1e-3 rtol=1e-3 on the commanded acceleration [m/s^2]; log values are rounded to 4 decimals"
+}
